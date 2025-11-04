@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes, address=no, email=no">
+    <title>Our Luxury Fleet | Limos, SUVs & Sedans in Providence, RI</title>
+    <meta name="description"
+        content="Explore the AllState Limo fleet of meticulously maintained luxury sedans, SUVs, stretch limousines, and Sprinter vans. Find the perfect vehicle for your needs.">
+    <link rel="canonical" href="https://www.allstatelimo-ri.com/luxury-fleet-limos-suvs-sedans" />
+    <meta property="og:title" content="Our Luxury Fleet | Limos, SUVs & Sedans in Providence, RI" />
+    <meta property="og:description"
+        content="Explore our fleet of meticulously maintained luxury sedans, SUVs, stretch limousines, and Sprinter vans." />
+    <meta property="og:image" content="https://www.allstatelimo-ri.com/images/og-fleet-lineup.jpg" />
+    <meta property="og:url" content="https://www.allstatelimo-ri.com/luxury-fleet-limos-suvs-sedans" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex, follow">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Places API for location autocomplete -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initPlacesAutocomplete"
+        async defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo">
+                <img src="1.png" alt="AllState Limo" class="logo">
+                <span class="logo-text"></span>
+            </a>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="about.html#about" class="nav-link">About Us</a></li>
+                <li><a href="fleet.html#fleet" class="nav-link active" aria-current="page">Fleet</a></li>
+                <li><a href="booking.html#booking" class="nav-link">Booking</a></li>
+                <li><a href="contact.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Menu" aria-controls="primary-menu" aria-expanded="false" role="button"
+                tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premier Fleet of Luxury Vehicles</h2>
+                <p class="section-subtitle">Choose from our collection of premium vehicles</p>
+            </div>
+            <div class="fleet-content">
+                <div class="fleet-carousel-container">
+                    <div class="fleet-carousel">
+                        <div class="fleet-carousel-track" id="fleetCarouselTrack">
+                            <div class="fleet-card">
+                                <div class="fleet-image">
+                                    <img src="fleet-sedan2.png" alt="Executive Sedan" class="fleet-img" loading="lazy"
+                                        decoding="async">
+                                </div>
+                                <h3>Executive Sedans</h3>
+                                <p>Perfect for business meetings and airport transfers</p>
+                                <ul class="fleet-features">
+                                    <li>Mercedes S-Class</li>
+                                    <li>BMW 7 Series</li>
+                                    <li>Audi A8</li>
+                                </ul>
+                                <div class="fleet-price"></div>
+                            </div>
+                            <div class="fleet-card featured">
+                                <div class="fleet-image">
+                                    <img src="fleet-stretch.png" alt="Stretch Limousine" class="fleet-img"
+                                        loading="lazy" decoding="async">
+                                </div>
+                                <h3>Stretch Limousines</h3>
+                                <p>Ideal for special occasions and group events</p>
+                                <ul class="fleet-features">
+                                    <li>10-12 Passenger Capacity</li>
+                                    <li>Premium Sound System</li>
+                                    <li>Mini Bar & LED Lighting</li>
+                                </ul>
+                                <div class="fleet-price"></div>
+                            </div>
+                            <div class="fleet-card">
+                                <div class="fleet-image">
+                                    <img src="fleet-suv.png" alt="SUV Limousine" class="fleet-img" loading="lazy"
+                                        decoding="async">
+                                </div>
+                                <h3>SUV Limousines</h3>
+                                <p>Spacious luxury for larger groups</p>
+                                <ul class="fleet-features">
+                                    <li>Escalade & Navigator</li>
+                                    <li>14-20 Passenger Capacity</li>
+                                    <li>Entertainment Systems</li>
+                                </ul>
+                                <div class="fleet-price"></div>
+                            </div>
+                            <div class="fleet-card">
+                                <div class="fleet-image">
+                                    <img src="fleet-sprinter.png" alt="Party Bus" class="fleet-img" loading="lazy"
+                                        decoding="async">
+                                </div>
+                                <h3>Sprinter Van</h3>
+                                <p>Corporate group transport,wedding guest shuttles, wine tours.</p>
+                                <ul class="fleet-features">
+                                    <li>25-40 Passenger Capacity</li>
+                                    <li>Dance Floor & Sound System</li>
+                                    <li>LED Lighting & Mini Bar</li>
+                                    <li>Professional Driver</li>
+                                </ul>
+                                <div class="fleet-price"></div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-dots" id="carouselDots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                        </div>
+                    </div>
+                    <!-- Fleet CTA Section -->
+                    <div class="fleet-cta">
+                        <div class="cta-content">
+                            <h3>Ready to Experience Luxury?</h3>
+                            <p>Book your premium transportation service today and experience the difference that
+                                AllState Limo brings to every journey.</p>
+                            <div class="cta-buttons">
+                                <a href="booking.html#booking" class="btn btn-primary">
+                                    <i class="fas fa-calendar-check"></i>
+                                    Book Now
+                                </a>
+                                <a href="tel:+14014421441" class="btn btn-secondary">
+                                    <i class="fas fa-phone"></i>
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cta-features">
+                            <div class="cta-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 Service</span>
+                            </div>
+                            <div class="cta-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Fully Insured</span>
+                            </div>
+                            <div class="cta-feature">
+                                <i class="fas fa-star"></i>
+                                <span>Premium Quality</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fleet-description">
+                    <h3>Experience Unmatched Luxury & Comfort</h3>
+                    <p>At AllState Limo, our fleet is a testament to our commitment to luxury, safety, and style. Each
+                        vehicle is hand-selected and meticulously maintained to ensure it meets the highest standards of
+                        performance and presentation. Featuring sophisticated black exteriors and plush, immaculate
+                        interiors, our fleet is equipped with premium amenities to make your travel through Rhode Island
+                        as comfortable and productive as possible.
+
+                        Explore our collection and find the perfect vehicle for your needs, whether it's a sleek sedan
+                        for a business meeting in Providence or a spacious stretch limousine for a wedding in Newport.
+                    </p>
+                    <p>Whether you're traveling for business or pleasure, our professional chauffeurs are trained to
+                        provide exceptional service while you relax in the lap of luxury. From executive sedans for
+                        intimate business meetings to spacious stretch limousines for special celebrations, we have the
+                        perfect vehicle for every occasion.</p>
+                    <div class="fleet-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Fully Insured</h4>
+                                <p>All vehicles are fully insured and licensed for your peace of mind</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Premium Quality</h4>
+                                <p>Only the finest luxury vehicles from top manufacturers</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>24/7 Availability</h4>
+                                <p>Round-the-clock service for all your transportation needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes, address=no, email=no">
+    <title>Book Your Limo Service in Rhode Island | AllState Limo</title>
+    <meta name="description"
+        content="Secure your luxury transportation in minutes with our easy online booking form. For immediate assistance, our team is available 24/7. Reserve your ride now.">
+    <link rel="canonical" href="https://www.allstatelimo-ri.com/book-limo-service-rhode-island" />
+    <meta property="og:title" content="Book Your Limo Service in Rhode Island | AllState Limo" />
+    <meta property="og:description"
+        content="Secure your luxury transportation in minutes with our easy online booking form. Our team is available 24/7." />
+    <meta property="og:image" content="https://www.allstatelimo-ri.com/images/og-reservation-form.jpg" />
+    <meta property="og:url" content="https://www.allstatelimo-ri.com/book-limo-service-rhode-island" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex, follow">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Places API for location autocomplete -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initPlacesAutocomplete"
+        async defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Primary">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo">
+                <img src="1.png" alt="AllState Limo" class="logo">
+                <span class="logo-text"></span>
+            </a>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="about.html#about" class="nav-link">About Us</a></li>
+                <li><a href="fleet.html#fleet" class="nav-link">Fleet</a></li>
+                <li><a href="booking.html#booking" class="nav-link active" aria-current="page">Booking</a></li>
+                <li><a href="contact.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Menu" aria-controls="primary-menu" aria-expanded="false" role="button"
+                tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- booking Section -->
+    <section id="booking" class="booking">
+        <div class="booking-background">
+            <img src="booking-bg.png" alt="Luxury Stretch Limousine" class="booking-bg-image" loading="lazy"
+                decoding="async">
+        </div>
+        <div class="booking-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Ride</h2>
+                <p class="section-subtitle">Reserve your luxury transportation experience</p>
+            </div>
+            <div class="booking-content">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location</label>
+                            <input type="text" id="pickup" name="pickup" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Type</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="sedan">Executive Sedan</option>
+                                <option value="stretch">Stretch Limousine</option>
+                                <option value="suv">SUV Limousine</option>
+                                <option value="party-bus">Party Bus</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers" name="passengers" required>
+                                <option value="">Select</option>
+                                <option value="1-3">1-3 Passengers</option>
+                                <option value="4-8">4-8 Passengers</option>
+                                <option value="9-15">9-15 Passengers</option>
+                                <option value="16+">16+ Passengers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" name="notes" rows="3"
+                            placeholder="Any special requirements or notes..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
